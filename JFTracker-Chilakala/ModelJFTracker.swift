@@ -37,6 +37,10 @@ class FoodRecorder {
                  FoodData(name:"Sandwich", caloriesPerServing:85, noOfServings:1)]
         }
     
+    func addFoodItem(food:String, calories:Double){
+            Foods.append(FoodData(name:food,caloriesPerServing:calories, noOfServings: 0))
+    }
+    
     func increaseTally(forItem i : Int){
         Foods[i].Tally += 1
     }
